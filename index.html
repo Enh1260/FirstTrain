@@ -7,11 +7,12 @@
 	<title>Free Landing Portfolio</title>
 </head>
 <body>
+	
 	<header class="header">
 		<div class="container">
 			<ul class="header__menu">
 				<li class="menu__item">
-					<a href="#" class="menu__link">Home</a>
+					<a href="#" class="menu__link menu__item-active">Home</a>
 				</li>
 				<li class="menu__item">
 					<a href="#" class="menu__link">About me</a>
@@ -26,10 +27,38 @@
 					<a href="#" class="menu__link">Contacts</a>
 				</li>
 			</ul>
+
 			<div class="header__line"></div>	
 		</div>
 	</header>
-	<section class="home">
+	<div class="header__menu-mobile">
+		<div class="m-menu__inner">
+			<div class="m-menu__close"></div>
+			<ul class="m-menu__list">
+				<li class="m-menu__item">
+					<a href="#home" class="m-menu__link menu__item-active">Home</a>
+				</li>
+				<li class="m-menu__item">
+					<a href="#about" class="m-menu__link">About me</a>
+				</li>
+				<li class="m-menu__item">
+					<a href="#skills" class="m-menu__link">Skills</a>
+				</li>
+				<li class="m-menu__item">
+					<a href="#portfolio" class="m-menu__link">Portfolio</a>
+				</li>
+				<li class="m-menu__item">
+					<a href="#contacts" class="m-menu__link">Contacts</a>
+				</li>
+			</ul>
+			<div class="m-lang">
+				<a href="" class="lang__item">ru</a>
+				<span> | </span>
+				<a href="" class="lang__item lang--active">eng</a>
+			</div>			
+		</div>
+	</div>
+	<section class="home" id="home">
 		<div class="container">
 			<div class="home__top">
 				<div class="home__title">Denis <br>Novik</div>
@@ -39,12 +68,16 @@
 					<span> | </span>
 					<a href="" class="lang__item lang--active">eng</a>
 				</div>
+				<div class="home__menu-icon"></div>
 			</div>
-			<img src="img/header_photo.png" alt="" class="home__img">
+			<img src="img/header_photo.png" alt="" class="home__img desk">
+			<img src="img/header_photo_mobile.jpg" alt="" class="home__img mobile">
 		</div>
 
 	</section>
-	<section class="about">
+
+	
+	<section class="about" id="about">
 		<div class="container">
 			<h2 class="about__title">About me</h2>
 			<div class="about__text">
@@ -56,7 +89,8 @@
 		</div>
 
 	</section>
-	<section class="skills">
+
+	<section class="skills" id="skills">
 		<div class="container">
 			<h2 class="skills__title">Skills</h2>
 			<p class="skills__text">I work in such programs as</p>
@@ -109,7 +143,8 @@
 		</div>
 
 	</section>
-	<section class="portfolio">
+
+	<section class="portfolio" id='portfolio'>
 		<div class="container">
 			<h2 class="portfolio__title">Portfolio</h2>
 			<ul class="portfolio__list">
@@ -128,7 +163,8 @@
 			</ul>
 		</div>
 	</section>
-	<section class="contacts">
+
+	<section class="contacts" id='contacts'>
 		<div class="contacts__content">
 			<h2 class="contacts__title">Contacts</h2>
 			<p class="contacts__text">Want to know more or just chat? You are welcome!</p>
@@ -158,5 +194,7 @@
 			<div class="contacts__subtext">Like me on LinkedIn, Instagram, Behance, Dribble</div>
 		</div>
 	</section>
+	<!---->
+<script src="index.js"></script>
 </body>
 </html>
